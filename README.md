@@ -13,7 +13,3 @@ Application web de prédiction utilisant un modèle Random Forest pour analyser 
 ## Technologies
 - **Backend** : Python, Flask, Scikit-learn, NumPy
 - **Frontend** : HTML5
-
-## Installation
-1. Cloner le dépôt :
-   ```bash
