@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Prédiction</title>
+</head>
+<body>
+    <h2>Formulaire de Prédiction</h2>
+    <form method="POST" action="/predict">
+        <label>Âge :</label><br>
+        <input type="number" name="age"><br><br>
+    
+        <label>Solde :</label><br>
+        <input type="number" step="any" name="balance"><br><br>
+    
+        <label>Nombre de produits :</label><br>
+        <input type="number" name="num_products"><br><br>
+    
+        <label>Membre actif :</label><br>
+        <select name="is_active">
+            <option value="1">Oui</option>
+            <option value="0">Non</option>
+        </select><br><br>
+    
+        <label>Sexe :</label><br>
+        <input type="radio" name="gender" value="Male" checked> Homme
+        <input type="radio" name="gender" value="Female"> Femme<br><br>
+    
+        <label>Géographie :</label><br>
+        <select name="geography">
+            <option value="France">France</option>
+            <option value="Germany">Germany</option>
+            <option value="Spain">Spain</option>
+        </select><br><br>
+    
+        <input type="submit" value="Prédire">
+    </form>
+
+    <h3>{{ Prediction }}</h3>
+
+</body>
+</html>
